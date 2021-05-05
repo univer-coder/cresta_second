@@ -5,8 +5,12 @@ $('.hamburger').on('click',function(){//.btn_triggerをクリックすると
 });
 
 $('.nav-list').on('click',function(){//ナビゲーションのリストをクリックすると//
-	$('.nav-wrapper').fadeToggle(0);//.nav-wrapperがフェードアウトして//
-	$('.hamburger').toggleClass('close');//ハンバーガーメニューが三本線に//
+	var w = $(window).width();
+    var x = 1024;
+	if( w <= x){
+		$('.nav-wrapper').fadeToggle(0);//.nav-wrapperがフェードアウトして//
+		$('.hamburger').toggleClass('close');//ハンバーガーメニューが三本線に//
+	}else{}
 });
 
 //#fvを過ぎるとヘッダー固定//
