@@ -5,7 +5,7 @@ $('.hamburger').on('click',function(){//.btn_triggerをクリックすると
 });
 
 $('.nav-list').on('click',function(){//ナビゲーションのリストをクリックすると//
-	var w = $(window).width();
+    var w = $(window).width();
     var x = 1024;
 	if( w <= x){
 		$('.nav-wrapper').fadeToggle(0);//.nav-wrapperがフェードアウトして//
